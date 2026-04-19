@@ -42,3 +42,13 @@ The objective is to detect network link failures and maintain connectivity by us
 h1 --- s1 --- s2
        |       |
        s3 --- s4 --- h2
+
+---
+
+## ▶️ How to Run
+
+### Start POX
+
+```bash
+cd ~/pox
+./pox.py forwarding.hub
