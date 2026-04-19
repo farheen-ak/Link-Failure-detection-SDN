@@ -18,14 +18,16 @@ class MyTopo(Topo):
         s3 = self.addSwitch('s3')
         s4 = self.addSwitch('s4')
 
-        # Host connections
+        # Hosts
         self.addLink(h1, s1)
         self.addLink(h2, s4)
 
-        # Redundant switch paths
+        # Main path
         self.addLink(s1, s2)
-        self.addLink(s1, s3)
         self.addLink(s2, s4)
+
+        # Backup path through s3
+        self.addLink(s1, s3)
         self.addLink(s3, s4)
 
 
