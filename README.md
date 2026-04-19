@@ -52,3 +52,16 @@ h1 --- s1 --- s2
 ```bash
 cd ~/pox
 ./pox.py forwarding.hub
+
+---
+
+## 📸 Output Screenshots
+
+### Normal Connectivity
+![Normal](screenshots/normal.png)
+
+### Link Failure
+![Failure](screenshots/failure.png)
+
+### Recovery
+![Recovery](screenshots/recovery.png)
